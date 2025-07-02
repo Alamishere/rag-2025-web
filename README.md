@@ -30,6 +30,16 @@ This is a simple Retrieval-Augmented Generation (RAG) project built with:
 
 ---
 
+---
+
+## 🚀 How to Run
+
+### 1. Set up virtual environment
+
+```bash
+python -m venv rag-env
+.\rag-env\Scripts\activate  # on Windows
+
 ## 🚀 Run the Assistant
 
 ```bash
@@ -38,3 +48,21 @@ python ask.py
 Example: Ask a question: What is the book Night about?
 
 Answer:Based on the context provided, Night is a memoir by Elie Wiesel about...
+
+## Notes
+You must have access to Amazon Bedrock and be whitelisted for Claude 3.
+
+The modelId used for Claude 3.5 Sonnet is:
+
+makefile
+Copy
+Edit
+anthropic.claude-3-sonnet-20240229-v1:0
+Amazon Titan embedding model used:
+
+arduino
+Copy
+Edit
+amazon.titan-embed-text-v1
+If you get an AccessDeniedException, make sure your IAM permissions and Bedrock access are configured.
+
