@@ -1,0 +1,40 @@
+# RAG 2025 Web
+
+This is a simple Retrieval-Augmented Generation (RAG) project built with:
+-  **FAISS** for semantic search
+-  **Amazon Titan Embeddings** for vector representation
+-  **Claude 3 Sonnet (via Bedrock)** for answering questions
+-  PDF data sources with context-aware question answering
+
+---
+
+## 🛠️ How it Works
+
+1. **Embed PDF chunks** with Titan Embeddings
+2. **Index** them with FAISS
+3. **User asks a question** → Titan embeds it → Top 3 chunks retrieved
+4. **Claude 3** (via Bedrock) generates an answer using those chunks
+
+---
+
+## 📁 Files
+
+| File | Purpose |
+|------|---------|
+| `load_pdf.py` | Loads and chunks PDF files |
+| `embed_chunks.py` | Converts chunks to Titan embeddings and builds FAISS index |
+| `faiss_index.index` | Vector database of all embedded chunks |
+| `texts.json` | Original text chunks used for context |
+| `ask.py` | Query engine using Claude 3 with retrieved context |
+| `data/` | Contains PDF source files |
+
+---
+
+## 🚀 Run the Assistant
+
+```bash
+python ask.py
+
+Example: Ask a question: What is the book Night about?
+
+Answer:Based on the context provided, Night is a memoir by Elie Wiesel about...
