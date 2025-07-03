@@ -25,6 +25,7 @@ This is a simple Retrieval-Augmented Generation (RAG) project built with:
 | `embed_chunks.py` | Converts chunks to Titan embeddings and builds FAISS index |
 | `faiss_index.index` | Vector database of all embedded chunks |
 | `texts.json` | Original text chunks used for context |
+| `app.py` | Streamlit web interface for RAG chat with conversation history and real-time document search |
 | `ask.py` | Query engine using Claude 3 with retrieved context |
 | `data/` | Contains PDF source files |
 
