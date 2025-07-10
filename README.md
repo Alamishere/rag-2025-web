@@ -8,7 +8,7 @@ This is a simple Retrieval-Augmented Generation (RAG) project built with:
 
 ---
 
-## 🛠️ How it Works
+## How it Works
 
 1. **Embed PDF chunks** with Titan Embeddings
 2. **Index** them with FAISS
@@ -17,7 +17,7 @@ This is a simple Retrieval-Augmented Generation (RAG) project built with:
 
 ---
 
-## 📁 Files
+##  Files
 
 | File | Purpose |
 |------|---------|
@@ -31,7 +31,7 @@ This is a simple Retrieval-Augmented Generation (RAG) project built with:
 
 ---
 
-## 🚀 How to Run
+##  How to Run
 
 ### 1. Set up virtual environment
  
@@ -39,7 +39,7 @@ This is a simple Retrieval-Augmented Generation (RAG) project built with:
 python -m venv rag-env
 .\rag-env\Scripts\activate  # on Windows
 
-## 🚀 Run the Assistant
+## Run the Assistant
 
 ```bash
 python ask.py
